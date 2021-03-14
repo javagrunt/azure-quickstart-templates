@@ -23,7 +23,7 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'http://AzureRedisGeek'
+    azureResourceManagerConnection: 'azure-quickstart-templates-service-connection'
     subscriptionId: '$(SUBSCRIPTION_ID)'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ARMPipelinesLAMP-rg'

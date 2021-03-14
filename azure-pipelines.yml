@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- {{ branch }}
+- none
 
 pool:
-  {{ pool }}
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
